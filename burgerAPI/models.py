@@ -67,4 +67,4 @@ class Order(models.Model):
     orderTime = models.CharField(max_length=100, blank=False)
 
     def __str__(self):
-        return self.user + " Order"
+        return str(self.user) + " Order"

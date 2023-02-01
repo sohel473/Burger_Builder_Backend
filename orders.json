@@ -1,0 +1,16 @@
+{
+  "order": {
+    "ingredients": {
+      "salad": 0,
+      "cheese": 0,
+      "meat": 0
+    },
+    "customer": {
+      "deliveryAddress": "",
+      "phone": "",
+      "paymentType": ""
+    },
+    "price": "",
+    "orderTime": ""
+  }
+}
