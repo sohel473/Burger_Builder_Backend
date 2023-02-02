@@ -15,9 +15,9 @@ class OrderViewSet(ModelViewSet):
     queryset = Order.objects.all()
     permission_classes = (IsAuthenticated,)
 
-    # def get_queryset(self):
-    #   queryset = Order.objects.all()
-    #   user_id = self.request.query_params.get("user_id", None)
-    #   if id is not None:
-    #       queryset = queryset.filter(user__id=user_id)
-    #   return queryset
+    def get_queryset(self):
+      queryset = Order.objects.all()
+      user_id = self.request.query_params.get("user_id", None)
+      if id is not None:
+          queryset = queryset.filter(user__id=user_id)
+      return queryset
